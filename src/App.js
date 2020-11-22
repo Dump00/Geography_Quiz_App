@@ -11,8 +11,8 @@ class App extends Component {
     return ( 
       <div className='container-fluid'>
         <Header />
-        <QuizCard />
         <ScoreCard />
+        <QuizCard />
         <Footer />
       </div>
      );
