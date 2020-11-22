@@ -2,7 +2,7 @@ import React from 'react';
 
 const ScoreCard = () => {
     return ( 
-        <div className='row row-4'>
+        <div className='row row-4 mt-5'>
             <h2 className='score mx-auto'>Your Current Score 👉 <span className='badge badge-success'>0</span></h2>
         </div>
      );
