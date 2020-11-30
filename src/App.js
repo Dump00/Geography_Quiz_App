@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 import Header from './components/header';
 import QuizCard from './components/quizCard';
 import ScoreCard from './components/scoreCard';
@@ -15,6 +18,7 @@ class App extends Component {
   render() { 
     return ( 
       <div className='container-fluid'>
+          <ToastContainer />
         <Header />
         <ScoreCard score={this.state.score}/>
         <QuizCard list={this.state.list} index={this.state.starting_index} onAnsSubmit={this.handleAnsSubmit}/>
@@ -25,6 +29,16 @@ class App extends Component {
   handleAnsSubmit = status => {
     let index = this.state.starting_index;
     let score = this.state.score;
+    let string;
+    if(score >= 0 && score <= 5){
+        string = "Not Bad !";
+    } else if (score > 5 && score <= 8){
+        string = "You are Good !";
+    } else {
+        string = "Awesome !";
+    }
+      console.log(index);
+      if(index === 9) toast.error(`${string} Your Score is ${score} out of 10. If You Want To Take An Another Shot, Refresh The Page.`);
     index = (index <= 8) ? index+=1 : index;
     score = (status === true) ? score+=1 : score;
     this.setState({ 
@@ -32,6 +46,7 @@ class App extends Component {
       score
     });
   }
+    // toast.error(`${string} Your Score is ${score} out of 10.`)
 }
  
 export default App;
