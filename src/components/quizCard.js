@@ -8,11 +8,12 @@ const QuizCard = props => {
                 <div className="card-body">
                 <h2 className="card-title">{list[index].question}</h2>
                 <ul key={list[index].id} className="list-group">
-                    {list[index].options.map(option => 
-                                            
-                                            <li className="list-group-item"><button onClick={() => onAnsSubmit(option.isCorrect)} className='btn btn-outline-primary btn-block' type='button'>{option.answer}</button></li>
-                                            
-                                        
+                    {list[index].options.map(option =>
+                            <li className="list-group-item"><button
+                                onClick={() => onAnsSubmit(option.isCorrect)}
+                                className='btn btn-outline-primary btn-block'
+                                type='button'>{option.answer}</button>
+                            </li>
                         )}
                         </ul>    
                 </div>

@@ -25,7 +25,7 @@ class App extends Component {
   handleAnsSubmit = status => {
     let index = this.state.starting_index;
     let score = this.state.score;
-    index = (index <= 9) ? index+=1 : index;
+    index = (index <= 8) ? index+=1 : index;
     score = (status === true) ? score+=1 : score;
     this.setState({ 
       starting_index : index,
