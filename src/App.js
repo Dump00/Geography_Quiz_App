@@ -37,8 +37,7 @@ class App extends Component {
     } else {
         string = "Awesome !";
     }
-      console.log(index);
-      if(index === 9) toast.error(`${string} Your Score is ${score} out of 10. If You Want To Take An Another Shot, Refresh The Page.`);
+    if(index === 9) toast.error(`${string} Your Score is ${score} out of 10. If You Want To Take An Another Shot, Refresh The Page.`);
     index = (index <= 8) ? index+=1 : index;
     score = (status === true) ? score+=1 : score;
     this.setState({ 
@@ -46,7 +45,6 @@ class App extends Component {
       score
     });
   }
-    // toast.error(`${string} Your Score is ${score} out of 10.`)
 }
  
 export default App;
