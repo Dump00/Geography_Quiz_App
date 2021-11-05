@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/geography_quiz_app/static/css/main.9a7f1b54.chunk.css",
+    "main.js": "/geography_quiz_app/static/js/main.09cdbcae.chunk.js",
+    "main.js.map": "/geography_quiz_app/static/js/main.09cdbcae.chunk.js.map",
+    "runtime-main.js": "/geography_quiz_app/static/js/runtime-main.797ba18f.js",
+    "runtime-main.js.map": "/geography_quiz_app/static/js/runtime-main.797ba18f.js.map",
+    "static/css/2.009c3f9c.chunk.css": "/geography_quiz_app/static/css/2.009c3f9c.chunk.css",
+    "static/js/2.04adb480.chunk.js": "/geography_quiz_app/static/js/2.04adb480.chunk.js",
+    "static/js/2.04adb480.chunk.js.map": "/geography_quiz_app/static/js/2.04adb480.chunk.js.map",
+    "index.html": "/geography_quiz_app/index.html",
+    "static/css/2.009c3f9c.chunk.css.map": "/geography_quiz_app/static/css/2.009c3f9c.chunk.css.map",
+    "static/css/main.9a7f1b54.chunk.css.map": "/geography_quiz_app/static/css/main.9a7f1b54.chunk.css.map",
+    "static/js/2.04adb480.chunk.js.LICENSE.txt": "/geography_quiz_app/static/js/2.04adb480.chunk.js.LICENSE.txt",
+    "static/media/planet-earth.1f99a187.png": "/geography_quiz_app/static/media/planet-earth.1f99a187.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.797ba18f.js",
+    "static/css/2.009c3f9c.chunk.css",
+    "static/js/2.04adb480.chunk.js",
+    "static/css/main.9a7f1b54.chunk.css",
+    "static/js/main.09cdbcae.chunk.js"
+  ]
+}
