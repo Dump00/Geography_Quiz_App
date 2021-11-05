@@ -37,9 +37,14 @@ class App extends Component {
     } else {
         string = "Awesome !";
     }
-    if(index === 9) toast.error(`${string} Your Score is ${score} out of 10. If You Want To Take An Another Shot, Refresh The Page.`);
-    index = (index <= 8) ? index+=1 : index;
     score = (status === true) ? score+=1 : score;
+    if(index === 9){
+      toast.error(`${string} Your Score is ${score} out of 10. If You Want To Take An Another Shot, Refresh The Page.`);
+      setTimeout(() => {
+        window.location.reload();
+      }, 8000)
+    }
+    index = (index <= 8) ? index+=1 : index;
     this.setState({ 
       starting_index : index,
       score
